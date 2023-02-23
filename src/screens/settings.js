@@ -37,7 +37,7 @@ const Settings = () => {
         window.location.href = "/home";
       });
     }
-  }, [monthly_income]);
+  }, [monthly_income, dispatch, onSubmit]);
 
   //Handle Form Submission By Setting onSubmit To True
   //Prevent Default From The event And Dispatch The Income Value To The Redux State

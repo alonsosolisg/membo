@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useState, useEffect } from "react";
 import { Form, Row, Col, FormGroup, Label, Input } from "reactstrap";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,7 +37,7 @@ const MemAdd = () => {
         window.location.href = "/home/memberships";
       });
     }
-  }, [memberships]);
+  }, [memberships, dispatch, onSubmitting]);
 
   //Handle Form Submission Form
   const handleSubmit = (event) => {

@@ -33,7 +33,7 @@ const MemDelete = () => {
         window.location.href = "/home/memberships";
       });
     }
-  }, [memberships]);
+  }, [memberships, dispatch, onSubmitting]);
 
   //Handle The Delete Action
   const handleDelete = () => {
