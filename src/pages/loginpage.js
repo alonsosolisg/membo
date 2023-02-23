@@ -21,7 +21,13 @@ const Login = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img className="h-25 w-25" src={logo} alt="logo" />
+        <div className="container-fluid">
+          <div className="row d-flex justify-content-center">
+            <div className=" col-lg-3 col-md-5 col-sm-6 col-8 d-flex align-items-center">
+              <img className="h-100 w-100" src={logo} alt="logo" />
+            </div>
+          </div>
+        </div>
         <Auth
           supabaseClient={supabase}
           appearance={{ theme: ThemeSupa }}
